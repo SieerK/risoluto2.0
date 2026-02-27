@@ -1,0 +1,53 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #0d5965;
+  justify-content: space-between;
+  font-size: 20px;
+  grid-area: header;
+}
+
+.menu,
+.empresa-container,
+.header-user-container {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  padding-left: 20px;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+
+.header-user-container {
+  background: linear-gradient(90deg, #0d5965, #009488);
+  justify-content: flex-end;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.clock {
+    font-family: Digital-7 Mono !important;
+    font-size: 1.5rem;
+    font-weight: 100;
+    -webkit-text-stroke: 1.45px;
+}
+
+.fingerprint, .user {
+    display: flex;
+    background-color: #0d5965;
+    color: #fff;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
