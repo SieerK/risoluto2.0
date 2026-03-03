@@ -4,7 +4,6 @@ const selectStatus = document.getElementById('Status');
 function updateStatusStyle() {
   const status = selectStatus.value;
 
-  // Remove classes antigas
   selectStatus.classList.remove('online', 'ausente', 'ocupado');
 
   if (status === 'Online') {
@@ -21,7 +20,15 @@ function updateStatusStyle() {
     borderColorElement.style.border = '2px solid #e74c3c';
     selectStatus.classList.add('ocupado');
   }
+
+  localStorage.setItem('statusUsuario', status);
+}
+
+// Recupera status salvo
+const statusSalvo = localStorage.getItem('statusUsuario');
+if (statusSalvo) {
+  selectStatus.value = statusSalvo;
 }
 
 selectStatus.addEventListener('change', updateStatusStyle);
-updateStatusStyle(); // Chama a função para definir o estilo inicial
+updateStatusStyle();
