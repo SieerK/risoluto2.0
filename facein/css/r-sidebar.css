@@ -5,6 +5,7 @@
     width: 235px;
     align-items: center;
     box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.3);
+    transition: transform .2s ease;
 }
 
 
@@ -39,3 +40,11 @@
     color: #047885;
     font-size: 11px;
 }
+
+@media (max-width: 1385px) {
+    .r-sidebar {
+        display: none;
+    }
+}
+
+
