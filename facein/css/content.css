@@ -74,3 +74,20 @@ hr {
 h6 span {
     color: #000;
 }
+
+@media (max-width: 1135px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: fit-content;
+    }
+
+    .faltas {
+        grid-column: 1 / 2;
+    }
+
+    .pendencias {
+        grid-column: 1 / 2;
+    }
+    
+}

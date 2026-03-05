@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+#sidebarToggler {
+  cursor: pointer;
+}
+
 .menu {
   padding-left: 20px;
   gap: 20px;
@@ -59,3 +63,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
+@media (max-width: 900px) {
+  .empresa-container {
+    display: none;
+  }
+}
