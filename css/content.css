@@ -113,5 +113,9 @@
   .fg-wrapper {
     margin-top: 0;
   }
+
+  .content-footer {
+    font-size: 9px;
+  }
   
 }
