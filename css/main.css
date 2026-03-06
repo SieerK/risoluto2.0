@@ -21,4 +21,5 @@ body {
   grid-template-areas: "header header" "content content";
   grid-template-columns: 1fr;
   grid-template-rows: 60px 1fr;
+
 }

@@ -76,6 +76,7 @@
   outline: none;
 }
 
+.home,
 .face-in 
 .ponto,
 .game-in,
@@ -91,6 +92,7 @@
   color: #fff;
 }
 
+.home i,
 .face-in i {
   color: #0d5965;
   background-color: #fff;
