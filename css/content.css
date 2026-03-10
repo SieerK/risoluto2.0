@@ -1,8 +1,8 @@
 .content {
-    grid-area: content;
-    display: flex;
-    flex-direction: column;
-    font-family: Montserrat, sans-serif;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
 }
 
 .content-main {
@@ -47,6 +47,7 @@
   height: 220px;
   margin-top: 10rem;
   border-radius: 16px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .FaceIn,
@@ -79,7 +80,7 @@
 }
 
 .fg-wrapper:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .content-footer {
@@ -102,7 +103,6 @@
 }
 
 @media (max-width: 555px) {
-  
   .content-main {
     flex-direction: column;
     gap: 10px;
@@ -117,5 +117,4 @@
   .content-footer {
     font-size: 9px;
   }
-  
 }

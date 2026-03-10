@@ -8,7 +8,9 @@
   height: 100%;
   grid-area: sidebar;
   user-select: none;
-  transition: width .2s ease, opacity .2s ease;
+  transition:
+    width 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .sidebar.is-closed {
@@ -77,8 +79,7 @@
 }
 
 .home,
-.face-in 
-.ponto,
+.face-in .ponto,
 .game-in,
 .consulta-lancamento,
 .sidebar a {
@@ -90,7 +91,12 @@
   font-weight: 600;
   text-decoration: none;
   color: #fff;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
+
+
+
 
 .home i,
 .face-in i {

@@ -62,3 +62,13 @@ function responsivity() {
 }
 
 responsivity();
+
+const relogio = document.querySelector(".clock");
+function atualizarRelogio() {
+  const data = new Date();
+  const horas = data.getHours().toString().padStart(2, "0");
+  const minutos = data.getMinutes().toString().padStart(2, "0");
+  const segundos = data.getSeconds().toString().padStart(2, "0");
+  relogio.textContent = `${horas}:${minutos}:${segundos}`;
+}
+setInterval(atualizarRelogio, 1000);
