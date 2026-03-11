@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="https://risoluto.4effect.com.br/faviconLogo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
@@ -128,10 +129,26 @@
                     </div>
 
                     <div class="bloco faltas">
-                        <h4 style="color: #0d5965">Faltas</h4>
+                        <div class="topo">
+                            <div class="seta">&#8249;</div>
+                            <h2>Horas Trabalhadas</h2>
+                            <div class="seta">&#8250;</div>
+                        </div>
+
+                        <canvas id="grafico"></canvas>
+
+                        <div class="rodape">
+                            <div class="info">41:40 <span>horas trabalhadas no mês</span></div>
+                            <select>
+                                <option>01/03/26 à 31/03/26</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="bloco pendencias">
                         <h4 style="color: #0d5965">Pendências</h4>
+                        <div class="info-pendencias">
+                            <p>Você não possui pendências</p>
+                        </div>
                     </div>
 
                 </div>
