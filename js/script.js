@@ -72,3 +72,50 @@ function atualizarRelogio() {
   relogio.textContent = `${horas}:${minutos}:${segundos}`;
 }
 setInterval(atualizarRelogio, 1000);
+
+const ctx = document.getElementById("grafico");
+
+new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: ["02/03", "03/03", "04/03", "05/03", "06/03", "09/03", "10/03"],
+    datasets: [
+      {
+        label: "Horas trabalhadas",
+        data: [5.9, 6.3, 5.8, 5.88, 5.72, 6.02, 5.82],
+        borderColor: "#6bbecb",
+        backgroundColor: "#6bbecb",
+        tension: 0.3,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+    },
+    scales: {
+      y: {
+        min: 5.5,
+        max: 6.7,
+        grid: {
+          color: "#d8d8d8",
+        },
+        ticks: {
+          callback: function (value) {
+            const horas = Math.floor(value);
+            const minutos = Math.round((value - horas) * 60);
+            return `${String(horas).padStart(2, "0")}:${String(minutos).padStart(2, "0")}`;
+          },
+        },
+      },
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+    },
+  },
+});
