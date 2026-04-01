@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/content.css" />
+    <link rel="stylesheet" href="css/content.css">
 
-    <title>Risoluto</title>
+    <title>Gestão de Ponto</title>
 </head>
 
 <body>
@@ -21,7 +22,8 @@
             <div class="menu">
                 <i class="fa-solid fa-bars" id="sidebarToggler"></i>
                 <div class="logo-container">
-                    <a href="../index.html"><img src="https://risoluto.4effect.com.br/content/6431367a41f82eb26218bc7eacbb597b.png"
+                    <a href="../index.html"><img
+                            src="https://risoluto.4effect.com.br/content/6431367a41f82eb26218bc7eacbb597b.png"
                             width="200px;" alt="Logo" />
                     </a>
                 </div>
@@ -95,10 +97,406 @@
             <div class="content-header">
                 <a href="../index.html"><i class="fa-solid fa-house"></i></a>
                 <span> / </span>
-                <span>Risoluto</span>
+                <span>Gestão de Ponto</span>
+                <div class="help-container">
+                    <span class="help">?</span>
+                </div>
             </div>
 
             <div class="content-main">
+
+                <div class="t-wrapper">
+
+                    <table>
+                        <tbody class="t-header">
+                            <tr>
+                                <th rowspan="2" class="vazia" style="border-top-left-radius: 1rem;"></th>
+                                <th rowspan="2">Dia da <br>Semana</th>
+                                <th rowspan="2">Data</th>
+                                <th colspan="2">Marcações</th>
+                                <th colspan="3">Total de Horas</th>
+                                <th rowspan="2" style="border-top-right-radius: 1rem;">Ações</th>
+                            </tr>
+                            <tr>
+                                <th>Entrada</th>
+                                <th>Saída</th>
+                                <th>Não Aprovadas</th>
+                                <th>Trabalhadas</th>
+                                <th>Saldo</th>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">01/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">02/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">03/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">04/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">05/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">06/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">07/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">08/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">09/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">10/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">11/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">12/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">13/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">14/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">15/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">16/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">17/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">18/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">19/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">20/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">21/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">22/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">23/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">24/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">25/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">26/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">27/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">28/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">29/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">30/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td></td>
+                            </tr>
+
+
+                        </tbody>
+
+
+
+
+                    </table>
+
+                </div>   
 
             </div>
 

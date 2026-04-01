@@ -1,3 +1,12 @@
+const relogio = document.querySelector(".clock");
+function atualizarRelogio() {
+  const data = new Date();
+  const horas = data.getHours().toString().padStart(2, "0");
+  const minutos = data.getMinutes().toString().padStart(2, "0");
+  const segundos = data.getSeconds().toString().padStart(2, "0");
+  relogio.textContent = `${horas}:${minutos}:${segundos}`;
+}
+setInterval(atualizarRelogio, 1000);
 const borderColorElement = document.getElementById("borderColor");
 const selectStatus = document.getElementById("Status");
 
@@ -63,15 +72,6 @@ function responsivity() {
 
 responsivity();
 
-const relogio = document.querySelector(".clock");
-function atualizarRelogio() {
-  const data = new Date();
-  const horas = data.getHours().toString().padStart(2, "0");
-  const minutos = data.getMinutes().toString().padStart(2, "0");
-  const segundos = data.getSeconds().toString().padStart(2, "0");
-  relogio.textContent = `${horas}:${minutos}:${segundos}`;
-}
-setInterval(atualizarRelogio, 1000);
 
 const ctx = document.getElementById("grafico");
 
@@ -93,6 +93,7 @@ new Chart(ctx, {
   },
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
     },
