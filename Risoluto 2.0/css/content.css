@@ -1,0 +1,120 @@
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
+}
+
+.content-main {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content-header {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #fff;
+  padding: 6px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6);
+  height: 35px;
+  align-items: flex-start;
+}
+
+.content-header a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #1b7a90;
+}
+
+.content-header span {
+  font-size: 12.2px;
+}
+
+.content-header a,
+.content-header span {
+  color: #1b7a90;
+}
+
+.fg-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  color: #58baca;
+  width: 220px;
+  height: 220px;
+  margin-top: 10rem;
+  border-radius: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.FaceIn,
+.GameIn,
+.FaceIn a,
+.GameIn a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.FaceIn i,
+.GameIn i {
+  font-size: 7.8rem;
+  color: #008794;
+}
+
+.FaceIn span,
+.GameIn span {
+  font-size: 1.2rem;
+  color: #58baca;
+  font-weight: bold;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.fg-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.content-footer {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #fff;
+  padding: 6px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #444;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: auto;
+}
+
+.content-footer a {
+  text-decoration: none;
+  color: #1b7a90;
+}
+
+@media (max-width: 555px) {
+  .content-main {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fg-wrapper {
+    margin-top: 0;
+  }
+
+  .content-footer {
+    font-size: 9px;
+  }
+}
