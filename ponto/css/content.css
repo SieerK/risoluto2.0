@@ -74,17 +74,14 @@ tr td img {
 
 @media (max-width: 425px) {
   table {
-    width: 20rem;
+    width: 15rem;
   }
-
   table,
   td,
   th {
-    font-size: .6rem;
+    font-size: .4rem;
   }
-
   td img {
-    width: 10px;
+    width: .4rem;
   }
-
 }
