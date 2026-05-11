@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://risoluto.4effect.com.br/faviconLogo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="stylesheet" href="css/content.css">
+
+    <title>Gestão de Ponto</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="main-header">
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="sidebarToggler"></i>
+                <div class="logo-container">
+                    <a href="../index.html"><img
+                            src="https://risoluto.4effect.com.br/content/6431367a41f82eb26218bc7eacbb597b.png"
+                            width="200px;" alt="Logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="empresa-container">
+                <span>Prefeitura de Florianópolis</span>
+            </div>
+            <div class="header-user-container">
+                <span class="clock">00:00:00</span>
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/ffffff/fingerprint.png"
+                    alt="fingerprint" class="fingerprint" />
+
+                <i class="user fa fa-user"></i>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <div class="user-info">
+                    <i class="user2 fa fa-user" id="borderColor"></i>
+                    <div class="name-job-title">
+                        <span>GUILHERME GABRIEL</span>
+                        <p>0107-ESTAGIARIO</p>
+                    </div>
+                </div>
+
+                <div class="user-status">
+                    <select name="status" id="Status">
+                        <option value="Online">Online</option>
+                        <option value="Ausente">Ausente</option>
+                        <option value="Ocupado">Ocupado</option>
+                    </select>
+                </div>
+
+                <div class="home">
+                    <a href="../index.html">
+                        <i class="fa fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </div>
+
+                <div class="face-in">
+                    <a href="../facein/facein.html"><i class="fa-brands fa-facebook-f"></i>
+                        <span>Face-In</span>
+                    </a>
+                </div>
+                <div class="ponto">
+                    <a href="#"><img class="sidebar-fingerprint" width="30" height="30"
+                            src="https://img.icons8.com/ios-filled/50/0c424e/fingerprint.png" alt="fingerprint" />
+                        <span>Ponto</span>
+                    </a>
+                </div>
+                <div class="game-in">
+                    <a href=""><img width="30" height="30"
+                            src="https://img.icons8.com/sf-black-filled/64/0d5965/controller.png" alt="controller" />
+                        <span>GameIn</span>
+                    </a>
+                </div>
+                <div class="consulta-lancamento">
+                    <a href="">
+                        <img width="30" height="30" src="https://img.icons8.com/ios/50/0d5965/printer-door-open.png"
+                            alt="printer-door-open" />
+                        <span>Consulta Lançamento</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <main class="content">
+
+            <div class="content-header">
+                <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                <span> / </span>
+                <span>Gestão de Ponto</span>
+                <div class="help-container">
+                    <span class="help">?</span>
+                </div>
+            </div>
+
+            <div class="content-main">
+
+                <div class="t-wrapper">
+
+                    <table>
+                        <tbody class="t-header">
+                            <tr>
+                                <th rowspan="2" class="vazia"
+                                    style="border-top-left-radius: 1rem; border-left: none; border-top: none;"></th>
+                                <th rowspan="2" style="border-top: none;">Dia da <br>Semana</th>
+                                <th rowspan="2" style="border-top: none;">Data</th>
+                                <th colspan="2" style="border-top: none;">Marcações</th>
+                                <th colspan="3" style="border-top: none;">Total de Horas</th>
+                                <th rowspan="2"
+                                    style="border-top-right-radius: 1rem; border-right: none; border-top: none;">Ações
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Entrada</th>
+                                <th>Saída</th>
+                                <th>Não Aprovadas</th>
+                                <th>Trabalhadas</th>
+                                <th>Saldo</th>
+                            </tr>
+                        </tbody>
+
+                        <tbody class="table-body">
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">01/04/2026</td>
+                                <td>11:43</td>
+                                <td class="r-bdc">18:06</td>
+                                <td>00:00</td>
+                                <td>06:23</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">02/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">03/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">04/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">05/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">06/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">07/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">08/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">09/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">10/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">11/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">12/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">13/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">14/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">15/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">16/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">17/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">18/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">19/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">20/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">21/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">22/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">23/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Sexta</td>
+                                <td class="r-bdc">24/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Sábado</td>
+                                <td class="r-bdc">25/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Domingo</td>
+                                <td class="r-bdc">26/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Segunda</td>
+                                <td class="r-bdc">27/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Terça</td>
+                                <td class="r-bdc">28/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="gray-bg">
+                                <td class="vazia"></td>
+                                <td>Quarta</td>
+                                <td class="r-bdc">29/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+                            <tr class="w-bg">
+                                <td class="vazia"></td>
+                                <td>Quinta</td>
+                                <td class="r-bdc">30/04/2026</td>
+                                <td></td>
+                                <td class="r-bdc"></td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td class="r-bdc">00:00</td>
+                                <td><img src="https://risoluto.4effect.com.br/content/images/svg/man-with-speech-bubble.svg"
+                                        width="17px"></td>
+                            </tr>
+
+
+                        </tbody>
+
+
+
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <footer class="content-footer">
+                <span>© Copyright 2026 <a href="#">Risoluto Tecnologia</a>. All rights reserved.</span>
+            </footer>
+
+        </main>
+
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+
+</html>
