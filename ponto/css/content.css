@@ -141,17 +141,17 @@ tr td img {
 @media (max-width: 325px) {
 
   table {
-    width: 19rem;
+    width: 1rem;
   }
 
   table,
   td {
-    font-size: 7px;
+    font-size: 6.5px;
     color: #000;
   }
 
   th {
-    font-size: 5.5px;
+    font-size: 5px;
   }
 
   td img {
