@@ -1,3 +1,7 @@
+.t-wrapper {
+  margin: 1rem auto;
+}
+
 .help-container {
   background-color: #0d5965;
   border-radius: 50%;
@@ -72,16 +76,85 @@ tr td img {
   cursor: pointer;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+
   table {
-    width: 15rem;
+    width: 45rem;
   }
   table,
-  td,
-  th {
-    font-size: .4rem;
+  td {
+    font-size: 10px;
+    color: #000;
   }
+
+  th {
+    font-size: 8.5px;
+  }
+
   td img {
-    width: .4rem;
+    width: 0.7rem;
+  }
+}
+
+@media (max-width: 425px) {
+
+  table {
+    width: 25rem;
+  }
+
+  table,
+  td {
+    font-size: 8px;
+    color: #000;
+  }
+
+  th {
+    font-size: 6.5px;
+  }
+
+  td img {
+    width: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+
+  table {
+    width: 22rem;
+  }
+
+  table,
+  td {
+    font-size: 7.5px;
+    color: #000;
+  }
+
+  th {
+    font-size: 6px;
+  }
+
+  td img {
+    width: 0.5rem;
+  }
+}
+
+@media (max-width: 325px) {
+
+  table {
+    width: 19rem;
+  }
+
+  table,
+  td {
+    font-size: 7px;
+    color: #000;
+  }
+
+  th {
+    font-size: 5.5px;
+  }
+
+  td img {
+    width: 0.5rem;
   }
 }
